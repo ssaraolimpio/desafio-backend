@@ -1,8 +1,11 @@
 package desafio.picpay.sistematransacao.repository;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class UsuarioRepository {
+import desafio.picpay.sistematransacao.model.Usuario;
 
+public interface UsuarioRepository  extends JpaRepository<Usuario, Long> {
+
+	
+	
 }
