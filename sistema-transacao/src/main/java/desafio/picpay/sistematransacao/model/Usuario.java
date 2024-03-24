@@ -9,10 +9,11 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PUBLIC) 
 @AllArgsConstructor
 @Entity(name = "usuario")
 public class Usuario {
@@ -44,6 +45,9 @@ public class Usuario {
     	this.tipoUsuario = usuario.getTipoUsuario();
     	this.saldo = usuario.getSaldo();
     }
+    
+    public Usuario() {}
+
 
 	public Long getId() {
 		return id;
