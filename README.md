@@ -13,3 +13,6 @@ Consulta a um serviço autorizador externo antes de finalizar a transferência.
 Operação de transferência deve ser uma transação, revertida em caso de inconsistência.
 Recebimento de notificações via console quando um usuário ou lojista recebe um pagamento.
 O serviço foi implementado seguindo a arquitetura RESTful.
+
+![image](https://github.com/user-attachments/assets/c9ef3ede-0d59-44ff-8ac3-5a2149a212c1)
+
